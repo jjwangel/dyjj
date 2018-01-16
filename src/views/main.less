@@ -1,0 +1,89 @@
+
+.main{
+  position: absolute;
+  width: 100%;
+  height:100%;
+
+  &-sidebar{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:21;
+    background-color:#495060;
+
+    .sidebar-header{
+
+      &__icon{
+        display: flex;
+        justify-content:center;
+        padding-top:20px;
+      }
+      &__uf-acct-no{
+        text-align: center;
+        font-size:15px;
+        color: #FFFFFF;
+        text-shadow: 0 -1px 0 #374683;
+        font-family:微软雅黑;
+      }
+      &__uf-acct-name{
+        text-align: center;
+        font-size:15px;
+        color: #FFFFFF;
+        text-shadow: 0 -1px 0 #374683;
+        font-family:微软雅黑;
+        border-bottom-style:groove;
+        border-bottom-width:2px;
+        padding-bottom:30px;
+        margin:0px 10px 0px 10px;
+      }
+    }
+    .sidebar-menu{
+      padding-top:30px;
+    }
+  }
+  .main-header{
+    box-sizing:border-box;
+    position:fixed;
+    display: block;
+    padding-left:200px;
+    width:100%;
+    height: 40px;
+    z-index:20;
+    box-shadow: 0 2px 1px 1px rgba(100,100,100,.1);
+
+    &__breadcrumb{
+      position:fixed;
+      height:40px;
+      top:0px;
+      left:220px;
+      display: flex;
+      align-items:center;
+    }
+
+    &__user-centre{
+      position:fixed;
+      height:40px;
+      top:0px;
+      right: 0px;
+      display: flex;
+      align-items:center;
+      margin-right:20px;
+    }
+  }
+  .main-view{
+    position: absolute;
+    top:50px;
+    right:0;
+    left:200px;
+    bottom:0;
+    background-color: #F0F0F0;
+    z-index: 1;
+    
+    .view-page{
+      margin:10px;
+
+    }
+  }
+}
