@@ -13,7 +13,7 @@ module.exports = {
     'vender-exten': '@/vendors/vendors.exten.js'
   },
   output: {
-    path: path.resolve(__dirname, '../dist/dist')
+    path: path.resolve(__dirname, '../docs/dist')
   },
   module: {
     rules: [{

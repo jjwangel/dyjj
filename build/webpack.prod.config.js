@@ -23,7 +23,7 @@ module.exports = merge(webpackBaseConfig, {
     chunkFilename: '[name].[hash].chunk.js'
   },
   plugins: [
-    new cleanWebpackPlugin(['dist/*'], {
+    new cleanWebpackPlugin(['docs/*'], {
       root: path.resolve(__dirname, '../')
     }),
     new ExtractTextPlugin({
