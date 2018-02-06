@@ -6,7 +6,7 @@ import store from './store';
 import Util from './libs/util';
 import App from './app.vue';
 import * as filters from './filters'; // 全局filter
-import'./mock';
+// import'./mock';
 import '@/styles/normalize.css';
 import 'iview/dist/styles/iview.css';
 

@@ -30,7 +30,7 @@
               </FormItem>
               <FormItem prop="uf_acct_no">
                 <Select v-model="form.uf_acct_no" :disabled="form.disable_select" placeholder="请选择连接账套">
-                  <Option v-for="item in form.uf_acct_list.list" :value="item.acct_no" :key="item.acct_no" :disabled="item.disable">{{item.acct_no}} - {{item.acct_name}}</Option>
+                  <Option v-for="item in form.uf_acct_list.acct_list" :value="item.acct_no" :key="item.acct_no" :disabled="item.disable">{{item.acct_no}} - {{item.acct_name}}</Option>
                 </Select>
               </FormItem>
               <FormItem prop="logging">
@@ -83,9 +83,9 @@
         util.GetUfAccountInfo().then(response => {
           const data = response.data;
           if (data.retrun_code === "000000") {
-            this.form.uf_acct_list = data.uf_acct_list;
+            this.form.uf_acct_list = data.data;
             this.form.disable_select = false;
-            this.form.uf_acct_no = data.uf_acct_list.default_acct_no;
+            this.form.uf_acct_no = data.data.default_acct_no;
           } else {
             console.log(data.retrun_code);
           }

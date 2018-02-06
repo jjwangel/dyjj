@@ -3,7 +3,7 @@ import env from '../../build/env';
 import store from '@/store';
 
 const ajaxUrl = env === 'development' ?
-  'http://127.0.0.1:8080' :
+  'http://127.0.0.1:3000' :
   env === 'production' ?
   'https://www.url.com' :
   'https://debug.url.com';

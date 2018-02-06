@@ -7,7 +7,7 @@ export function getUfAccountInfo() {
 
   return service({
     url: '/Common/GetUfAccountInfo',
-    method: 'post',
+    method: 'get',
     data
   })
 }
